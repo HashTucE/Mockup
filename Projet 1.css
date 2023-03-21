@@ -1,0 +1,145 @@
+/* Police principale */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v18-latin-regular.eot');
+  src: local(''),
+       url('../fonts/montserrat-v18-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/montserrat-v18-latin-regular.woff2') format('woff2'),
+       url('../fonts/montserrat-v18-latin-regular.woff') format('woff'),
+       url('../fonts/montserrat-v18-latin-regular.ttf') format('truetype'),
+       url('../fonts/montserrat-v18-latin-regular.svg#Montserrat') format('svg');
+}
+
+
+
+/* Style général */
+*{
+    font-family: 'Montserrat', Avenir, helvetica, arial, verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+p{
+    font-size: 1em;
+    line-height: 1.3em;
+}
+h1{
+    color: white;
+    font-size: 2.3em;
+}
+h2{
+    font-size: 1.8em;
+    margin: 5px 0px 15px;
+}
+h2, ul, p{
+    color: rgb(3, 55, 102);
+}
+ul{
+    margin-left: 40px;
+}
+mark{
+  background-color: rgb(42, 235, 164);
+  color: rgb(3, 55, 102);
+}
+header, section{
+    display: flex;
+
+}
+header, section, footer{
+    max-width: 1150px;
+    height: auto;
+    margin: 0px auto;
+  }  
+
+
+/* En-tête */
+header{
+    background-color: rgb(116, 87, 231);  
+}
+header p{
+    color: white;
+    font-size: 1.3em;
+    margin-top: 60px;
+}
+.intro{
+    width: 50%;
+    padding: 80px 0px 80px 80px;
+} 
+.photo img{
+    height: 350px;
+    margin-bottom: -6px;
+}
+.photo{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+/* Section */
+aside{
+    width: 45%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+aside p{
+    font-size: 12em;
+    text-align: center;
+}
+article{
+    padding: 80px 80px 80px 20px;
+    width: 55%;
+}
+
+
+
+/* Pied de page */
+footer{
+    background-color: rgb(3, 55, 102);
+}
+.outro{
+    padding: 80px;
+}
+footer p{
+    color: white;
+    font-size: 1.6em;
+    padding-bottom: 20px;
+}
+.social{
+    display: flex;
+    justify-content: flex-start;
+}
+.social img{
+    width: 80px;
+    height: 80px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+
+/* Version Smartphone */
+@media screen and (max-width: 750px){
+    header, section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro{
+        width: 100%;
+        padding-right: 80px;
+        margin-bottom: -20px;
+
+    }
+    aside p{
+        margin-top: 40px;
+        margin-bottom: -40px;
+    }
+    article{
+        width: 100%;
+        padding: 50px 30px;
+    }
+
